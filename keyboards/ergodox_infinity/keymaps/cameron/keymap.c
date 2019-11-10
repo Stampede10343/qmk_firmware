@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [L1] = LAYOUT_ergodox( // layer 1 : function layers
 /* left hand
  *    +-------+-----+-----+-----+-----+-----+-----+
- *    |       | f1  | f2  | f3  | f4  | f5  | f11 |
+ *    |       | f1  | f2  | f3  | f4  | f5  |     |
  *    +-------+-----+-----+-----+-----+-----+-----+
  *    |       |     |     |     |     |     |     |
  *    +-------+-----+-----+-----+-----+-----+     |
@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                  |     |     |     |
  *                                  +-----+-----+-----+
  */
-       KC_TRNS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F11,
+       KC_TRNS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
@@ -108,9 +108,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                              KC_TRNS, KC_TRNS, KC_TRNS,
 /* right hand
  *        +-----+-----+-----+-----+-----+-----+-------+
- *        | f12 | f6  | f7  | f8  | f9  | f10 |       |
+ *        |     | f6  | f7  | f8  | f9  | f10 |  f11  |
  *        +-----+-----+-----+-----+-----+-----+-------+
- *        |     |     |     |     |     |     |       |
+ *        |     |     |     |     |     |     |  f12  |
  *        |     +-----+-----+-----+-----+-----+-------+
  *        +-----+     |     |     |     |     |       |
  *        |     +-----+-----+-----+-----+-----+-------+
@@ -125,11 +125,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *    |     |     |     |
  *    +-----+-----+-----+
  */
-       KC_F12,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_TRNS,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_F11,
+       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_F12,
                 KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_MPLY,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_MPRV, KC_MNXT, KC_TRNS, KC_TRNS,
-                         KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS,
+                         KC_VOLU, KC_VOLD, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS,
        KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS
